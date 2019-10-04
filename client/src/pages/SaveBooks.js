@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import SavedBooks from "../components/SavedResult"
+import SavedResults from "../components/SavedResult"
 
-class Saved extends Component {
+class SavedBooks extends Component {
     state = {
         savedBooks: []
     };
@@ -28,11 +28,13 @@ class Saved extends Component {
 
     render() {
         return (
-
-            <SavedBooks/>
-
-        )
+            <Container fluid className="container">
+                <Jumbotron />
+                <Container>
+                    <SavedResult savedBooks={this.state.savedBooks} handleDeleteButton={this.handleDeleteButton} />
+                </Container>
+            </Container>        )
     }
 }
 
-export default SaveBook 
+export default SavedBooks 
