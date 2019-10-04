@@ -33,7 +33,7 @@ class SavedBooks extends Component {
             <Container fluid className="container">
                 <Jumbotron />
                 <Container>
-                    <SavedResult savedBooks={this.state.savedBooks} handleDeleteButton={this.handleDeleteButton} />
+                    <SavedResults savedBooks={this.state.savedBooks} handleDeleteButton={this.handleDeleteButton} />
                 </Container>
             </Container>        )
     }
