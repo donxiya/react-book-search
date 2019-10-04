@@ -5,7 +5,6 @@ const routes = require("./routes");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
